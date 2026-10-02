@@ -7,3 +7,7 @@ AOSP_DIR=/product/priv-app/Contacts
 if [ -d "$AOSP_DIR" ]; then
 	busybox mount -t tmpfs -o mode=0755 tmpfs "$AOSP_DIR" && chcon u:object_r:system_file:s0 "$AOSP_DIR"
 fi
+
+# Drop cached parse results of our APKs so PackageManager rescans them after a module update
+# (a stale cache entry kept the old InCallUI manifest after updating).
+rm -f /data/system/package_cache/*/XiaomiInCallUI-* /data/system/package_cache/*/XiaomiContacts-*
