@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <!-- the bundled HyperOS framework classes call hidden platform APIs -->
+    <hidden-api-whitelisted-app package="com.android.contacts" />
+    <hidden-api-whitelisted-app package="com.android.incallui" />
+</config>

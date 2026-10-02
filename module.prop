@@ -1,0 +1,7 @@
+id=xiaomi_dialer_port
+name=Hyper Dialer
+version=v0.4
+versionCode=6
+author=mbenanaya
+description=HyperOS 3 Phone, Contacts and in-call screen for AOSP. Hides AOSP Contacts (same com.android.contacts package).
+updateJson=https://github.com/mben25/HyperDialer/releases/latest/download/update.json
